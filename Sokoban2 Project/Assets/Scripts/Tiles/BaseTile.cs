@@ -9,7 +9,7 @@ public class BaseTile : MonoBehaviour
     {
         if(isSolid)
         {
-            player
+            player.AbortStep();
         }
     }
 }
