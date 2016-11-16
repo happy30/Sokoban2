@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
         TryStep(map.GetPoint(desiredPosition));
     }
 
+    // Resets desired position.
     public void AbortStep()
     {
         desiredPosition = previousSafePosition;
