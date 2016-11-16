@@ -2,9 +2,9 @@
 
 public class Player : MonoBehaviour
 {
-    Map map;
+    public Map map;
 
-    Vector2 desiredPosition;
+    public Vector2 desiredPosition;
     Vector2 previousSafePosition;
 
     public void Awake()
@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         desiredPosition = previousSafePosition;
     }
 
-    void TryStep(BaseTile nextTile)
+    public void TryStep(BaseTile nextTile)
     {
         // TODO: better system than "AbortStep()"
         nextTile.OnStep(this);
