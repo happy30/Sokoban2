@@ -10,6 +10,8 @@ namespace Sokoban.LevelEditor
         /// </summary> 
         public int Id;
 
+        public Sprite sprite;
+
         /// <summary>
         /// Gets called when you press one of the tiles.
         /// </summary>
